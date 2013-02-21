@@ -1,0 +1,17 @@
+﻿.video {
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    display: inline-block;
+    margin: 20px;
+}
+
+    .video.mine {
+        border: 5px solid green;
+    }
+
+#startBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

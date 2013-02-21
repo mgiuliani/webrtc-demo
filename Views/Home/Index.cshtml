@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>WebRTC Demo</title>
+    
+    <link href="/Content/demo.css" rel="stylesheet" />
+    
+    <!-- jQuery is required for SignalR, but we don't need it for WebRTC -->
+    <script src="/Scripts/jquery-1.6.4.min.js"></script>
+    <script src="/Scripts/jquery.signalR-1.0.0.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    
+    <!-- adapter.js bridges the gap between Firefox and Chrome in terms of the WebRTC API syntax -->
+    <script src="https://webrtc-samples.googlecode.com/svn-history/r48/trunk/apprtc/js/adapter.js"></script>
+    
+    <!-- our app code -->
+    <script src="/Scripts/WebRtcDemo/demo.js"></script>
+</head>
+<body>
+    <!-- the autoplay attribute is required to start displaying the feed -->
+    <video autoplay class="video mine" id="rtcVideo"></video>
+    <button id="startBtn" disabled="disabled">Start Call</button>
+</body>
+</html>
