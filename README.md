@@ -1,4 +1,4 @@
-webrtc-demo
+WebRTC Demo
 ===========
 
-WebRTC Blog Demo Code
+This demo code accompanies the blog post located at: [no link yet]
