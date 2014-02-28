@@ -66,7 +66,7 @@
                             // And send it to the originator, where it will become their RemoteDescription
                             hub.server.send(JSON.stringify({ 'sdp': connection.localDescription }));
                         });
-                    });
+                    }, function (error) { console.log('Error creating session description: ' + error); });
                 } else if (connection.remoteDescription.type == 'answer') {
                     console.log('got an answer');
                 }
@@ -121,7 +121,7 @@
                     // And send it to our peer, where it will become their RemoteDescription
                     hub.server.send(JSON.stringify({ "sdp": desc }));
                 });
-            });
+            }, function (error) { console.log('Error creating session description: ' + error); });
         });
     }
 })();
